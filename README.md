@@ -1,0 +1,37 @@
+# TouchDesigner Hand-Tracking Particle System
+
+## Description
+Real-time interactive particle system controlled by hand gestures using MediaPipe hand tracking in TouchDesigner. Control 3D particle cubes and geometry with dual-hand tracking via webcam.
+
+## Requirements
+- TouchDesigner 2022.28000 or later
+- Webcam (720p+ recommended)
+- GPU with OpenGL 4.5+ support
+- 8GB RAM minimum (16GB recommended)
+
+## Features
+- Dual-hand tracking (left hand controls cube, right hand controls particles)
+- Real-time GPU-accelerated particle rendering
+- MediaPipe integration for hand detection
+- Custom CHOP parsing for hand data (x, y, size, angle)
+
+## Installation
+1. Install TouchDesigner from https://derivative.ca/
+2. Download project files from: https://drive.google.com/drive/folders/1OEkr86qdECKBmPUDHeqS2Mil9wPTZkDJ?usp=drive_link
+3. Open the .toe file in TouchDesigner
+4. Allow webcam permissions when prompted
+
+## Usage
+- **Right hand**: Move to control particle cube (X/Y translation)
+- **Left hand**: Move to control wireframe geometry
+- Adjust sensitivity in geo_particles → Xform → Translate parameters
+
+## Troubleshooting
+- No tracking: Check webcam permissions and lighting
+- No movement: Verify CHOP expressions in Xform Translate X/Y fields
+- Performance issues: Reduce particle count or lower webcam resolution
+
+## Project Files
+All code and assets available at the Google Drive link above.
+
+**Created**: February 2026
